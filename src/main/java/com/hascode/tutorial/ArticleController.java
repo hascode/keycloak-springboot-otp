@@ -45,6 +45,6 @@ class ArticleController {
   @GetMapping(path = "/logout")
   public String logout(HttpServletRequest request) throws ServletException {
     request.logout();
-    return "/";
+    return "logout";
   }
 }
