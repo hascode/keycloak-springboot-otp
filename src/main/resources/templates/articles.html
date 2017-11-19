@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>hasCode.com Articles</title></head>
+<body>
+<h1>hasCode.com Articles</h1>
+<ul>
+  <li th:each="article : ${articles}">
+    <a th:href="${article.url}" th:text="${article.title}"/>
+  </li>
+</ul>
+
+<p>
+  <a href="/logout">Logout</a>
+</p>
+</body>
+</html>
